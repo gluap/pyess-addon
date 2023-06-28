@@ -16,10 +16,6 @@ map:
 options:
   ess_ip: "127.0.0.1"
   ess_password: "ess_password"
-  mqtt_ip: "127.0.0.1"
-  mqtt_port: "8888"
-  mqtt_user: "user"
-  mqtt_password: "password"
 schema:
   message: "str?"
 image: "ghcr.io/home-assistant/{arch}-addon-example"

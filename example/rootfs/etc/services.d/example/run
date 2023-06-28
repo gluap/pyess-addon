@@ -13,10 +13,9 @@ declare message
 message=$(bashio::config 'message')
 ess_ip=$(bashio::config 'ess_ip')
 ess_password=$(bashio::config 'ess_password')
-mqtt_ip=$(bashio::config 'mqtt_ip')
-mqtt_port=$(bashio::config 'mqtt_port')
-mqtt_user=$(bashio::config 'mqtt_user')
-mqtt_password=$(bashio::config 'mqtt_password')
+mqtt_host=$(bashio::services mqtt "host")
+mqtt_user=$(bashio::services mqtt "username")
+mqtt_password=$(bashio::services mqtt "password")
 
 
 ## Print the message the user supplied, defaults to "Hello World..."
@@ -30,6 +29,6 @@ bashio::log.info "${message:="Hello World..."}"
 #  mqtt_password: "password"
 
 ## Run your program
-exec /usr/bin/pyess --ess_password ${ess_password} --mqtt_server ${mqtt_ip} --mqtt_user=${mqtt_user} --mqtt_password=${mqtt_password} --interval_seconds=10 --mqtt_port=${mqtt_port} --ess_ip=${ess_ip}
+exec /usr/bin/pyess --ess_password ${ess_password} --mqtt_server ${mqtt_host} --mqtt_user=${mqtt_user} --mqtt_password=${mqtt_password} --interval_seconds=10 --ess_ip=${ess_ip}
 
 exec echo "lala"
