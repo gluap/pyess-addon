@@ -7,7 +7,7 @@ ARG TEMPIO_VERSION BUILD_ARCH
 ADD pip.conf /etc/pip.conf
 RUN \
   apk add --no-cache \
-    python3 py3-pip py3-wheel python3-devel build-base
+    python3 py3-pip py3-wheel python3-dev build-base
 RUN pip install --upgrade pip
 RUN pip install --prefer-binary pyess
 
