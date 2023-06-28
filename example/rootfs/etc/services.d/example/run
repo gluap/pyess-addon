@@ -10,7 +10,7 @@
 declare message
 
 ## Get the 'message' key from the user config options.
-message=$(bashio::config 'message')
+message=$(bashio::config 'ess_ip')
 ess_ip=$(bashio::config 'ess_ip')
 ess_password=$(bashio::config 'ess_password')
 mqtt_host=$(bashio::services mqtt "host")
@@ -19,7 +19,7 @@ mqtt_password=$(bashio::services mqtt "password")
 
 
 ## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${message:="Hello World..."}"
+bashio::log.info "${message:="Hum? World..."}"
 
 #  ess_ip: "127.0.0.1"
 #  ess_password: "ess_password"

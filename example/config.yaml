@@ -17,5 +17,6 @@ options:
   ess_ip: "127.0.0.1"
   ess_password: "ess_password"
 schema:
-  message: "str?"
+  ess_ip: "str?"
+  ess_password: "str?"
 image: "ghcr.io/home-assistant/{arch}-addon-example"
