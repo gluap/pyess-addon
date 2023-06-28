@@ -7,7 +7,7 @@
 # Add your code here
 
 # Declare variables
-declare message
+declare ess_ip sensors ess_password mqtt_host mqtt_user mqtt_password
 
 ## Get the 'message' key from the user config options.
 
