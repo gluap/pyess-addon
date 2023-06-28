@@ -19,4 +19,4 @@ options:
 schema:
   ess_ip: "str?"
   ess_password: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/gluap/{arch}-pyess-addon"
