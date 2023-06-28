@@ -6,6 +6,6 @@ FROM $BUILD_FROM
 ARG TEMPIO_VERSION BUILD_ARCH
 RUN \
   apk add --no-cache \
-    python3
+    python3 python3-pip
 RUN python3 -m pip install pyess
 
