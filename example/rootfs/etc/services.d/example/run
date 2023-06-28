@@ -16,4 +16,6 @@ message=$(bashio::config 'message')
 bashio::log.info "${message:="Hello World..."}"
 
 ## Run your program
-exec pyess
+exec pyess --help
+
+exec echo "lala"
