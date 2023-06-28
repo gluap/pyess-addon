@@ -7,5 +7,6 @@ ARG TEMPIO_VERSION BUILD_ARCH
 RUN \
   apk add --no-cache \
     python3 py3-pip py3-wheel
-RUN python3 -m pip install pyess
+RUN pip install --upgrade pip
+RUN pip install --prefer-binary pyess
 
