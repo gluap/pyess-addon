@@ -11,9 +11,8 @@ declare message
 
 ## Get the 'message' key from the user config options.
 
-message=$(bashio::config 'ess_ip')
 ess_ip=$(bashio::config 'ess_ip')
-sensors=$(bashio::config 'homeassistant_autoconfig_sensors')
+sensors=$(bashio::config 'ess_sensors')
 ess_password=$(bashio::config 'ess_password')
 mqtt_host=$(bashio::services mqtt "host")
 mqtt_user=$(bashio::services mqtt "username")
