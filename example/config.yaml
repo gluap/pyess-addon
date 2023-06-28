@@ -18,7 +18,7 @@ options:
   ess_password: "ess_password"
   homeassistant_autoconfig_sensors: "ess/common/BATT/soc,ess/home/statistics/pcs_pv_total_power,ess/common/GRID/active_power,ess/common/LOAD/load_power,ess/common/PCS/month_pv_generation_sum,ess/common/PCS/month_grid_feed_in_energy,ess/home/statistics/batconv_power,ess/common/BATT/month_batt_charge_energy,ess/common/BATT/month_batt_discharge_energy,ess/common/GRID/month_grid_power_purchase_energy,ess/control/active"
 schema:
-  ess_ip: "str"
-  ess_password: "str"
-  homeassistant_autoconfig_sensors: "str"
+  ess_ip: "str?"
+  ess_password: "str?"
+  homeassistant_autoconfig_sensors: "str?"
 image: "ghcr.io/gluap/{arch}-pyess-addon"
