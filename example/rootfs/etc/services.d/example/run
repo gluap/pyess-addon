@@ -39,4 +39,5 @@ ls -l /usr/bin/essmqtt
 ls /usr/bin
 
 ## Run your program
+/usr/bin/my_program
 /usr/bin/essmqtt --ess_password ${ess_password} --mqtt_server ${mqtt_host} --mqtt_user=${mqtt_user} --mqtt_password=${mqtt_password} --interval_seconds=10 --ess_ip=${ess_ip} --hass_autoconfig_sensors=${sensors}

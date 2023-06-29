@@ -12,4 +12,4 @@ RUN \
 # python3-dev build-base
 RUN pip install --upgrade pip
 RUN pip install --prefer-binary pyess
-
+COPY rootfs /
