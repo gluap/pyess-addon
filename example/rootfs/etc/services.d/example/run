@@ -6,10 +6,14 @@
 
 # Add your code here
 
+bashio::log.info "declaring variables"
+
 # Declare variables
 declare ess_ip sensors ess_password mqtt_host mqtt_user mqtt_password
 
 ## Get the 'message' key from the user config options.
+
+bashio::log.info "reading config"
 
 ess_ip=$(bashio::config 'ess_ip')
 sensors=$(bashio::config 'ess_sensors')
@@ -17,6 +21,8 @@ ess_password=$(bashio::config 'ess_password')
 mqtt_host=$(bashio::services mqtt "host")
 mqtt_user=$(bashio::services mqtt "username")
 mqtt_password=$(bashio::services mqtt "password")
+
+bashio::log.info "done reading config"
 
 
 ## Print the message the user supplied, defaults to "Hello World..."
