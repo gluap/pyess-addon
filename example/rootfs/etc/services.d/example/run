@@ -9,13 +9,13 @@
 bashio::log.info "declaring variables"
 
 # Declare variables
-declare ess_ip sensors ess_password mqtt_host mqtt_user mqtt_password
+declare ess_host sensors ess_password mqtt_host mqtt_user mqtt_password
 
 ## Get the 'message' key from the user config options.
 
 bashio::log.info "reading config"
 
-ess_ip=$(bashio::config 'ess_ip')
+ess_host=$(bashio::config 'ess_host')
 sensors=$(bashio::config 'ess_sensors')
 ess_password=$(bashio::config 'ess_password')
 mqtt_host=$(bashio::services mqtt "host")
@@ -26,9 +26,9 @@ bashio::log.info "done reading config"
 
 
 ## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "Starting pyss with ess ${ess_ip}"
+bashio::log.info "Starting pyss with ess ${ess_host}, logging to mqtt server ${mqtt_host}"
 
-#  ess_ip: "127.0.0.1"
+#  ess_host: "127.0.0.1"
 #  ess_password: "ess_password"
 #  mqtt_ip: "127.0.0.1"
 #  mqtt_port: "8888"
@@ -40,4 +40,4 @@ ls /usr/bin
 
 ## Run your program
 /usr/bin/my_program
-/usr/bin/essmqtt --ess_password ${ess_password} --mqtt_server ${mqtt_host} --mqtt_user=${mqtt_user} --mqtt_password=${mqtt_password} --interval_seconds=10 --ess_ip=${ess_ip} --hass_autoconfig_sensors=${sensors}
+/usr/bin/essmqtt --ess_password ${ess_password} --mqtt_server ${mqtt_host} --mqtt_user=${mqtt_user} --mqtt_password=${mqtt_password} --interval_seconds=10 --ess_host=${ess_host} --hass_autoconfig_sensors=${sensors}

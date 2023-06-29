@@ -14,11 +14,11 @@ init: false
 map:
   - share:rw
 options:
-  ess_ip: "127.0.0.1"
+  ess_host: "127.0.0.1"
   ess_password: "ess_password"
   ess_sensors: "ess/common/BATT/soc,ess/home/statistics/pcs_pv_total_power,ess/common/GRID/active_power"
 schema:
-  ess_ip: "str?"
+  ess_host: "str?"
   ess_password: "str?"
   ess_sensors: "str?"
 services:
