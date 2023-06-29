@@ -1,6 +1,12 @@
-# Home Assistant Add-on: Example add-on
+# Home Assistant Add-on: pyess
 
-_Example add-on to use as a blueprint for new add-ons._
+This is an addon for Homeassistant to connect to LG ESS type Photovoltaic inverters.
+
+This addon depends on mqtt/mosquitto. Together with mosquitto it facilitates setting up ``essmqtt`` from [``pyess``](https://github.com/gluap/pyess). 
+
+To use this addon, add a new add-on repository to homeassistant with the URL:
+
+```https://github.com/gluap/pyess-addon```
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
