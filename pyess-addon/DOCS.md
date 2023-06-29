@@ -5,27 +5,33 @@ This is an addon for coupling homeassistant with LG ESS type photovoltaic invert
 This addon depends on the mqtt/mosquitto addon being set up. Together with mosquitto it facilitates setting up ``essmqtt`` from [``pyess``](https://github.com/gluap/pyess). 
 
 ## How to use
-### Determine your ESS password From an Android mobile:
+First find your password, then proceed to "configure this addon"
+### Find your ESS password on any system with python 3:
+1. ``python3 -m pip install --user essmqtt``
+2. On the ESS wifi run ``esscli --actionn get_password``
+3. note your password.
+
+### Find your ESS password using an android mobile:
 1. Download [Pydroid 3](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3&hl=de&gl=US). When opening the app skip the paid plans and use the ad-based plan.
 2. In the app open the terminal
-3. in the terminal run
+3. In the terminal run:
    ```
    pip install pyess
    ```
-4. connect to the wifi of your ess
-5. in the terminal run
+4. Connect to the wifi of your ess.
+5. In the terminal run:
    ```
    esscli --action get_password
    ```
-6. write down your password
+6. Take note of your password.
 
 ### Configure this addon
 On the configuration page, enter the required information:
-- the IP-Address or hostname of your ESS
-- the password from above
-- mqtt username and password will be passed by the mqtt addon.
+- The IP-Address or hostname of your ESS
+- The password from above
+- MQTT username and password will be autodetected from the mqtt add-on.
 
-- Decide which values from the list below should be announced as sensors to homeassistant and enter them as a long line of comma-separated values without spaces (you can prepare it in a text editor). Follow the configuration example you see on the config page.
+- Decide which values from the list below should be announced as sensors to homeassistant and enter them as a long line of comma-separated values without spaces (you can prepare it in a text editor). Follow the configuration example you see on the config page. Your final string will look something like this: ``ess/common/BATT/soc,ess/home/statistics/pcs_pv_total_power,ess/common/GRID/active_power,ess/common/LOAD/load_power,ess/common/PCS/month_pv_generation_sum,ess/common/PCS/month_grid_feed_in_energy,ess/home/statistics/batconv_power,ess/common/BATT/month_batt_charge_energy,ess/common/BATT/month_batt_discharge_energy,ess/common/GRID/month_grid_power_purchase_energy,ess/control/active``
 
 ```
     ess/home/statistics/pcs_pv_total_power 0

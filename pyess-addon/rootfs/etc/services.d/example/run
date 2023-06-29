@@ -29,5 +29,4 @@ bashio::log.info "done reading config"
 bashio::log.info "Starting pyss with ess ${ess_host}, logging to mqtt server ${mqtt_host}"
 
 ## Run your program
-/usr/bin/my_program
 /usr/bin/essmqtt --ess_password ${ess_password} --mqtt_server ${mqtt_host} --mqtt_user=${mqtt_user} --mqtt_password=${mqtt_password} --interval_seconds=10 --ess_host=${ess_host} --hass_autoconfig_sensors=${sensors}
