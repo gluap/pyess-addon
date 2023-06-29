@@ -12,7 +12,7 @@ Or if you don't use My-homeassistant you can add the following repo url manually
 
 This repository contains the following add-ons
 
-### [Example add-on](./pyess-addon)
+### [pyess add-on](./pyess-addon)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
@@ -20,7 +20,7 @@ This repository contains the following add-ons
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-_Example add-on to use as a blueprint for new add-ons._
+_pyess add-on to enable LG ESS access via mqtt._
 
 <!--
 
