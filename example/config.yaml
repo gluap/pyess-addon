@@ -21,4 +21,6 @@ schema:
   ess_ip: "str?"
   ess_password: "str?"
   ess_sensors: "str?"
+services:
+  - "mqtt:need"
 image: "ghcr.io/gluap/{arch}-pyess-addon"
