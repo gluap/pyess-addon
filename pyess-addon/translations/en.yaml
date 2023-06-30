@@ -1,4 +1,10 @@
 configuration:
-  message:
-    name: Message
-    description: The message that will be printed to the log when starting this pyess-addon add-on.
+  ess_host:
+    name: ESS Hostname
+    description: Hostname/IP of the ESS
+  ess_password:
+    name: ESS Password
+    description: Password of the ESS as determined using the process in the documentation
+  ess_sensors:
+    name: ESS Sensors
+    description: Comma-separated list of the endpoints to automatically configure as HomeAssistant entities. See documentation for list of possible options.

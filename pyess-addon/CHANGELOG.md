@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 2.0.4
+- Add translations.
+- Adapt stuff according to repo readme
+
 ## 2.0.3
 - Update to pull in new version of pyess to create a "LG ESS" device to contain the energy sensors.
 

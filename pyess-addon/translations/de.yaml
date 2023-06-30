@@ -1,0 +1,10 @@
+configuration:
+  ess_host:
+    name: ESS Hostname
+    description: Hostname/IP der ESS
+  ess_password:
+    name: ESS Passwort
+    description: Passwort für ESS (wie man es extrahiert steht in der Dokumentation)
+  ess_sensors:
+    name: ESS Sensoren
+    description: Kommaseparierte Liste der Werte aus der ESS, die automatisch als HomeAssistant Entities bereitgestellt werden sollen. Liste der möglichen Entities steht in der Dokumentation.
