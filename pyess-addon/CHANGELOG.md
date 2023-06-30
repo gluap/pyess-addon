@@ -1,5 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 2.0.3
+- Update to pull in new version of pyess to create a "LG ESS" device to contain the energy sensors.
+
 ## 2.0.2
 - Update to pull in new version of pyess to add "total_increasing" state class to more Wh metering endpoints
 
