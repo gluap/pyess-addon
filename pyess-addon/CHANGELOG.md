@@ -1,5 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 2.0.5
+- Parametrize update interval
+
 ## 2.0.4
 - Add translations.
 - Adapt stuff according to repo readme

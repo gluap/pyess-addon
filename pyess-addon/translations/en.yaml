@@ -8,3 +8,6 @@ configuration:
   ess_sensors:
     name: ESS Sensors
     description: Comma-separated list of the endpoints to automatically configure as HomeAssistant entities. See documentation for list of possible options.
+  ess_update_interval:
+    name: ESS Update Interval [seconds]
+    description: Polling interval with which the data is updated (seconds)

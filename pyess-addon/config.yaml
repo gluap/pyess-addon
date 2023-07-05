@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: pyess add-on
-version: "2.0.4"
+version: "2.0.5"
 slug: pyess-addon
 description: pyess/essmqtt add-on
 url: "https://github.com/gluap/pyess-addon/tree/main/example"
@@ -17,10 +17,13 @@ options:
   ess_host: "127.0.0.1"
   ess_password: "ess_password"
   ess_sensors: "ess/common/BATT/soc,ess/home/statistics/pcs_pv_total_power,ess/common/GRID/active_power,ess/common/LOAD/load_power,ess/common/PCS/month_pv_generation_sum,ess/common/PCS/month_grid_feed_in_energy,ess/home/statistics/batconv_power,ess/common/BATT/month_batt_charge_energy,ess/common/BATT/month_batt_discharge_energy,ess/common/GRID/month_grid_power_purchase_energy,ess/control/active"
+  ess_update_interval: "ess_password"
+
 schema:
   ess_host: "str?"
   ess_password: "str?"
   ess_sensors: "str?"
+  ess_update_interval: "int(1,600)?"
 services:
   - "mqtt:need"
 image: "ghcr.io/gluap/{arch}-pyess-addon"

@@ -8,3 +8,6 @@ configuration:
   ess_sensors:
     name: ESS Sensoren
     description: Kommaseparierte Liste der Werte aus der ESS, die automatisch als HomeAssistant Entities bereitgestellt werden sollen. Liste der möglichen Entities steht in der Dokumentation.
+  ess_update_interval:
+    name: ESS update Intervall [Sekunden]
+    description: Abfrageintervall der ESS in Sekunden
