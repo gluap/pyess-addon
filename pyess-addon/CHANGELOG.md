@@ -1,5 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 2.0.6
+- Pull in a fix from pyess
+
 ## 2.0.5
 - Parametrize update interval
 
