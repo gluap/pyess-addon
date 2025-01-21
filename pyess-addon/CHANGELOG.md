@@ -1,5 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 2.0.8
+- Fix units for things that contain "current" in their path but are actually not currents (in amps) but just current values (possibly in Watt Hours)
+
 ## 2.0.7
 - Improve ha-supervised support
 
