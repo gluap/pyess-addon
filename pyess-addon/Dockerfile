@@ -10,6 +10,6 @@ RUN \
     python3 py3-pip py3-wheel
 # if we need to build python packages we need these two packages on top
 # python3-dev build-base
-RUN pip install --upgrade pip
-RUN pip install --prefer-binary pyess
+RUN pip install --break-system-packages --upgrade pip
+RUN pip install --break-system-packages --prefer-binary pyess
 COPY rootfs /
